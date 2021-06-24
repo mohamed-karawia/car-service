@@ -1,0 +1,50 @@
+$primary-color: #2194E0;
+$secondary-color: #1380C7;
+$third-color: #1272B1;
+
+$gray: #efefef;
+
+@mixin sectionP{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+@mixin sectionHeading {
+    padding: 1rem 0;
+    position: relative;
+
+    h2 {
+      text-transform: capitalize;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 4rem;
+      height: 4px;
+
+      background-color: $primary-color;
+      position: absolute;
+
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 4rem;
+      height: 4px;
+
+      background-color: $primary-color;
+      position: absolute;
+
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+}
