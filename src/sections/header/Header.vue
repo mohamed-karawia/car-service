@@ -57,6 +57,11 @@ export default {
     justify-content: center;
   }
 
+    @media only screen and (max-width: 360px) {
+    padding: 0 1rem;
+    //justify-content: start;
+  }
+
   &--details {
     color: #ffff;
     width: 50%;

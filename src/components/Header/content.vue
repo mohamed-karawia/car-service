@@ -43,5 +43,9 @@ export default {
   @media only screen and (max-width: 720px){
     flex-direction: column;
   }
+
+    @media only screen and (max-width: 460px){
+    top: 90%;
+  }
 }
 </style>

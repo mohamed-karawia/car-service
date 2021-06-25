@@ -105,6 +105,14 @@ export default {
 
   p {
     @include sectionP;
+
+    @media only screen and (max-width: 376px) {
+      padding: 0 1rem;
+    }
+
+    @media only screen and (max-width: 357px) {
+      padding: 0 2rem;
+    }
   }
 
   &__heading {
